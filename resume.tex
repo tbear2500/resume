@@ -1,0 +1,168 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\setlength{\parskip}{0.0cm}
+\setlength{\parindent}{0em}
+\linespread{1.0}
+
+
+
+\newenvironment{details}{
+    \vspace{-.5em}
+    \begin{itemize}
+        \renewcommand \labelitemi{\labelitemiv}
+        \setlength{\itemsep}{0pt}
+        \setlength{\parskip}{-1pt}
+        \setlength{\parsep}{0pt}
+    }{
+    \end{itemize}
+    \vspace{-.5em}
+}
+
+
+\newcommand{\hr} {
+    \vspace{-1em}
+    \par\rule{\textwidth}{1pt}
+    \vspace{-1.5em}
+}
+
+\newcommand{\ressection}[1] {
+    \par{\large \textbf{#1}}
+    \hr
+}
+
+%the employment header/section
+\newenvironment{employment} {
+    \setlength{\parskip}{0pt}
+    \ressection{Employment}
+}{
+    \vspace{0.5em}
+}
+
+%the education header/section
+\newenvironment{education} {
+    \ressection{Education}
+}{
+    \vspace{0.5em}
+}
+
+%the other stuff header/section
+\newenvironment{other} {
+    \ressection{Other Skills and Qualifications}
+    \setlength{\parskip}{3pt}
+}{
+    \vspace{0.5em}
+}
+
+
+
+%an employer's information
+\newcommand{\employer}[3] {
+    \vspace{3pt}
+%    \par\textbf{#1} --- \textit{#2}
+%    \par #3
+    {\par\textbf{#1}---\textit{#2} \hfill #3}
+}
+
+%an educational institution's information
+\newcommand{\educator}[3] {
+    \textbf{#1}
+    \hfill #2
+    \par #3
+}
+
+
+
+
+
+
+\begin{document}
+
+
+
+
+\thispagestyle{empty}
+
+\begin{flushright}
+    {\large \textbf{Tyler Ayrton Stank}}\\
+    tstank@wisc.edu --- \oldstylenums{262} \oldstylenums{724}-\oldstylenums{6355}
+\end{flushright}
+
+\begin{education}
+
+\educator{University of Wisconsin}{Madison, WI}{September 2012 to present}
+\begin{details}
+    \item Seeking degree in Computer Sciences% with German Language certificate
+%    \item Current GPA 3.391
+    \item National Merit Scholarship
+    \item Expect to graduate in December 2015
+\end{details}
+
+%\par I graduated June 2012 from North High School in Sheboygan, Wisconsin, Covaledictorian, with 5.273 GPA (the highest allowed by the school).
+
+\end{education}
+
+
+\begin{employment} 
+
+\employer{Pilot Training System}{Software developer}{6/2015 to present}
+\begin{details}
+    \item Develop advanced weather simulation engine for FSX/Prepar3D
+    \item Project involved C++/C\# applications and a web interface in PHP/SQL.
+\end{details}
+
+\employer{UW Library System}{Helpdesk support}{6/2015 to 9/2015}
+\begin{details}
+    \item Provided support for 
+\end{details}
+
+\employer{Badger Catholic}{Webmaster}{8/2014 to present}
+\begin{details}
+    \item Publish weekly newsletter
+    \item Update content on website as necessary
+    \item Troubleshooot website and technical problems as necessary
+    \item Create documentation for position
+\end{details}
+
+\employer{\scalebox{.8}[1.0]{Department of Industrial and Systems Engineering}}{\scalebox{.9}[1.0]{Video editor, Programmer}}{\scalebox{.9}[1.0]{8/2014 to 2/2015}}
+\begin{details}
+    \item Help create intro private pilot course
+    \item Create PHP quiz-generating software for course website
+\end{details}
+
+\employer{Internet Scout}{System Administrator}{6/2013 to 9/2014}
+\begin{details}
+    \item Track and periodically update desktop hardware and software
+    \item Perform technical support for employees
+    \item Manage and occasionally fix, modify, or create server software and configuration
+    \item Worked in Linux shell almost exclusively (CentOS 6, bash)
+\end{details}
+
+%\employer{Badger Market}{Cashier, Stock clerk}{September 2012 to August 2013}
+%\begin{details}
+%   \item Set up and open the store at 6:30am three days per week
+%   \item Keep track of inventory and replenish items as necessary
+%   \item Stock and organize refrigerated foods in the morning
+%   \item Communicate with coworkers about the state of the market
+%\end{details}
+
+
+\end{employment}
+
+\begin{other}
+\par \textbf{Language skills:}% C/C++ (since 2007), Java (2010), HTML (2007), PHP (2014), bash (2010), Javascript (2015)
+\begin{details}
+    \item C/C++ (since 2011), Java (2010)
+    \item HTML (2007), PHP (2014), Javascript (2015)
+    \item bash (2010)
+\end{details}
+%\par I have been programming in C++ since 2007, during which time I finished seventh nationally in FBLA's \textit{Desktop Application Programming} category in 2011 using a program I wrote in C++.
+%    I have since gained nearly as much employment in Java and HTML, more recently acquiring employment in bash, PHP, CSS, and Perl.
+\par \textbf{FBLA:} Finished 7th nationally in Future Business Leaders of America's \textit{Desktop Application Programming} category in 2011 (C++)
+
+
+\par I obtained my Private Pilot Certificate on July 3 2014 and have since accumulated near 150 flying hours.%having studied at Wisconsin Aviation's Madison location with instructors Matt Riedl and Jake Robinson.
+    I compete on the University of Wisconsin Flying team.
+
+\end{other}
+\end{document}
