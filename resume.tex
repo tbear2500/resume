@@ -11,7 +11,7 @@
 
 
 \newenvironment{details}{
-    \vspace{-1em}
+    \vspace{-.8em}
     \begin{itemize}
         \renewcommand \labelitemi{\labelitemiv}
         \setlength{\itemsep}{0pt}
@@ -71,7 +71,7 @@
     \textbf{#1}
     \hfill #2
     \par #3 \hfill #4
-    \par\vspace{-.5em}  % A little hack necessary to keep the graduation date right aligned
+    \par% A little hack necessary to keep the graduation date right aligned
 }
 
 
@@ -107,9 +107,10 @@
 \employer{Pilot Training System}{Software developer}{June 2015 to present}
 \begin{details}
     \item Develop advanced weather simulation engine (ClimaDrive) for FSX/Prepar3D
+    \vspace{.5em}
     \begin{details}
         \item C++/C\# applications interface with simulator via event-based SimConnect SDK
-        \item PHP/SQL web interface loads weather data and flight parameters for the simulator
+        \item PHP/SQL web interface provides weather briefing and creates data for simulator
     \end{details}
     \item Integrate use of GitHub to aid collaboration
 \end{details}
