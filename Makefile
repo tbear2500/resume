@@ -1,5 +1,5 @@
 resumefile=resume.tex
 
-resume: ${resumefile} ${coverletterfile}
+resume: ${resumefile}
 	pdflatex ${resumefile}
 #	pdflatex $<
